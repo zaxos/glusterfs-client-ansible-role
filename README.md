@@ -36,7 +36,7 @@ Example Playbook
         mode: "0770"
             
   roles:
-    - role: zaxos.glusterfs-ansible-role
+    - role: zaxos.glusterfs-client-ansible-role
 ```
 
 Example volume
