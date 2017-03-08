@@ -7,5 +7,4 @@ glusterfs_volumes: []
 
 glusterfs_client_packages_EL:
   - {package: "glusterfs"}
-  - {package: "glusterfs-cli"}
   - {package: "glusterfs-fuse"}
