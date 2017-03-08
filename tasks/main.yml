@@ -1,0 +1,14 @@
+---
+# tasks file for glusterfs-client-ansible-role
+
+- name: Install glusterfs client
+  include: install-glusterfs-client.yml
+  when: ansible_os_family == "RedHat"
+
+- name: Mount volume(s)
+  include: mount-volumes.yml
+  when: "{{ glusterfs_volumes }}"
+
+- name: Unmount volume(s)
+  include: unmount-volumes.yml
+  when: "{{ glusterfs_volumes }}"

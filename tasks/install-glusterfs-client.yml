@@ -1,0 +1,13 @@
+---
+# tasks file for glusterfs-client-ansible-role
+
+- name: Install glusterfs repository
+  yum:
+    name: "centos-release-gluster{{ glusterfs_version.replace('.', '') }}"
+    state: present
+
+- name: Install glusterfs
+  yum:
+    name: "{{ item.package }}"
+    state: present
+  with_items: "{{ glusterfs_client_packages_EL }}"

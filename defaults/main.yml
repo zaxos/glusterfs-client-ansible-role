@@ -1,0 +1,11 @@
+---
+# defaults file for glusterfs-client-ansible-role
+
+glusterfs_version: "3.9"
+
+glusterfs_volumes: []
+
+glusterfs_client_packages_EL:
+  - {package: "glusterfs"}
+  - {package: "glusterfs-cli"}
+  - {package: "glusterfs-fuse"}
