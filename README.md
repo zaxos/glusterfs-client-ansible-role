@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/zaxos/glusterfs-client-ansible-role.svg?branch=master)](https://travis-ci.org/zaxos/glusterfs-client-ansible-role)
 [![Ansible Galaxy](https://img.shields.io/badge/galaxy-_zaxos.glusterfs--client--ansible--role-blue.svg)](https://galaxy.ansible.com/zaxos/glusterfs-client-ansible-role/)
 
 glusterfs-client-ansible-role
