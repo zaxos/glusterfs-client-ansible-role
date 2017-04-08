@@ -22,7 +22,7 @@ Example Playbook
 ```yaml
 - hosts: servers
   vars:
-    glusterfs_version: "3.9"
+    glusterfs_version: "3.10"
     glusterfs_volumes:
     - volume: volume1
       state: present
@@ -59,5 +59,5 @@ Example volume
 Role Variables
 --------------
 Some variables that require review:
-- `glusterfs_version`: GlusterFS client version to be installed using CentOS Storage SIG Packages. Default is the currently latest available version "3.9".
+- `glusterfs_version`: GlusterFS client version to be installed using CentOS Storage SIG Packages. Default is the currently latest available version "3.10". Latest stable version is "3.8".
 - `glusterfs_volumes`: List of volumes.
