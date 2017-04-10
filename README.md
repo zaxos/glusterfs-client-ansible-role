@@ -43,7 +43,7 @@ Example volume
 --------------
 ```yaml
 - volume: example
-  state: present/absent  # required #
+  state: present/absent  # optional, default is 'present', set to 'absent' for removal #
   nodes:  # required, glusterfs nodes list #
     - node1
     - node2
