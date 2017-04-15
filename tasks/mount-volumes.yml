@@ -39,13 +39,13 @@
     item.mount is defined and
     (item.state is not defined or item.state == "present")
 
-- name: Ensure mount paths prermissions
+- name: Ensure mount paths permissions
   file:
     path: "{{ item.mount.path }}"
     state: directory
     owner: "{{ item.mount.owner | default ('root') }}"
     group: "{{ item.mount.group | default ('root') }}"
-    mode: "{{ item.mount.mode | default (0755) }}"
+    mode: "{{ item.mount.mode | default ('0755') }}"
   with_items: "{{ glusterfs_volumes }}"
   when: >
     item.mount is defined and
