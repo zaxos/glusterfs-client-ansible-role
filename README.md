@@ -59,6 +59,6 @@ Example volume
 Role Variables
 --------------
 Some variables that require review:
-- `glusterfs_version`: GlusterFS client version to be installed using CentOS Storage SIG Packages. Default is the currently latest available version "3.10". Latest stable version is "3.8".
+- `glusterfs_version`: GlusterFS client version to be installed using CentOS Storage SIG Packages. Latest stable version is "3.10".
 - `glusterfs_volumes`: List of volumes.
 - `glusterfs_auto_remount`: Default value is "True". If set to "True", when the mount path of a volume is changed, the old mount path will be automatically unmounted and removed from fstab.
