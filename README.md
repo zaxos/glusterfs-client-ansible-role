@@ -8,7 +8,7 @@ Ansible role to mount GlusterFS volumes.
 
 Requirements
 ------------
-* centos/rhel 7
+* centos 7
 * ansible >= 2.2
 
 Installation
