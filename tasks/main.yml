@@ -5,6 +5,10 @@
   include: install-glusterfs-client.yml
   when: ansible_distribution == 'CentOS'
 
+- name: Install glusterfs client UBUNTU
+  include: install-glusterfs-client.yml
+  when: ansible_distribution == 'Ubuntu'
+
 - name: Mount volume(s)
   include: mount-volumes.yml
   when: glusterfs_volumes

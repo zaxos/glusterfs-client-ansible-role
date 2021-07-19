@@ -1,0 +1,9 @@
+---
+# tasks file for glusterfs-client-ansible-role
+
+- name: Ensure glusterfs client are installed (apt)
+  apt:
+    name:
+      -  glusterfs-client
+    state: present
+  when: ansible_pkg_mgr == 'apt'
